@@ -1,0 +1,25 @@
+@url = http://localhost:5000
+
+###
+post {{url}}/api/user/register
+Content-Type: application/json
+
+{
+  "username": "aaaddaa",
+  "password": "aaaaaa",
+  "email": "adddadddaa@qq.com",
+  "password2": "aaaaaa"
+}
+
+###
+post {{url}}/api/user/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+###
+get {{url}}/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTJkZDAwNjRkOTU1MTRkMDNjZjgyYiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE1ODc3MzQ0MDAsImV4cCI6MTU4NzgyMDgwMH0.XF2R2OaQLs6RuLYwikAfaFL1guoMiDIrEOV8Y0OAxRw
